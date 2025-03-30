@@ -20,8 +20,8 @@ Ensure you have **Node.js** and **npm** installed on your machine. If not, insta
 
 ### Clone the Repository
 ```sh
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
+git clone <https://github.com/kjarir/halalicious.git>
+cd <halalicious>
 ```
 
 ### Install Dependencies
@@ -35,10 +35,6 @@ npm run dev
 ```
 The application will start at `http://localhost:5173/` (default Vite port).
 
-### Deploy on **Vercel**
-1. Push your code to GitHub.
-2. Sign in to [Vercel](https://vercel.com/).
-3. Import your GitHub repository and follow the deployment steps.
 
 ## 📌 Features
 ✅ Beautiful UI with Tailwind CSS  
