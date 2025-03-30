@@ -29,7 +29,7 @@ const NavBar = () => {
           <span className="font-serif text-2xl font-bold text-primary animate-fade-in">
             Halalicious
           </span>
-          <span className="text-sm font-light text-muted-foreground">Flavours</span>
+          <span className="text-sm font-light text-muted-foreground"></span>
         </Link>
 
         {/* Desktop Navigation */}
