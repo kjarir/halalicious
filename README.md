@@ -47,7 +47,7 @@ The application will start at `http://localhost:5173/` (default Vite port).
 ✅ Smooth user experience with React  
 
 ## 🤝 Contributing
-Feel free to fork this repository and submit pull requests. All contributions are welcome!
+Feel free to fork this repository and submit pull requests. All contributions are most welcome!
 
 ## 📜 License
 This project is licensed under the MIT License.
