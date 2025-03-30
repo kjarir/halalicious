@@ -1,0 +1,143 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 98%;
+    --foreground: 20 10% 10%;
+
+    --card: 30 30% 98%;
+    --card-foreground: 20 10% 10%;
+
+    --popover: 30 30% 98%;
+    --popover-foreground: 20 10% 10%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 30 30% 98%;
+
+    --secondary: 35 92% 95%;
+    --secondary-foreground: 25 70% 33%;
+
+    --muted: 35 50% 95%;
+    --muted-foreground: 20 10% 40%;
+
+    --accent: 15 80% 60%;
+    --accent-foreground: 30 30% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 30 30% 98%;
+
+    --border: 20 15% 85%;
+    --input: 20 15% 85%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 30 50% 96%;
+    --sidebar-foreground: 20 10% 10%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 30 30% 98%;
+    --sidebar-accent: 35 92% 90%;
+    --sidebar-accent-foreground: 25 70% 33%;
+    --sidebar-border: 20 15% 85%;
+    --sidebar-ring: 25 95% 53%;
+  }
+
+  .dark {
+    --background: 20 15% 10%;
+    --foreground: 35 30% 90%;
+
+    --card: 20 15% 10%;
+    --card-foreground: 35 30% 90%;
+
+    --popover: 20 15% 10%;
+    --popover-foreground: 35 30% 90%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 10 10% 10%;
+
+    --secondary: 25 30% 20%;
+    --secondary-foreground: 35 30% 90%;
+
+    --muted: 25 30% 20%;
+    --muted-foreground: 35 30% 70%;
+
+    --accent: 15 80% 60%;
+    --accent-foreground: 35 30% 90%;
+
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 35 30% 90%;
+
+    --border: 25 30% 25%;
+    --input: 25 30% 25%;
+    --ring: 25 95% 53%;
+
+    --sidebar-background: 20 15% 15%;
+    --sidebar-foreground: 35 30% 90%;
+    --sidebar-primary: 25 95% 53%;
+    --sidebar-primary-foreground: 10 10% 10%;
+    --sidebar-accent: 25 30% 25%;
+    --sidebar-accent-foreground: 35 30% 90%;
+    --sidebar-border: 25 30% 30%;
+    --sidebar-ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .product-card {
+    @apply relative overflow-hidden rounded-xl bg-card shadow-md transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .product-image {
+    @apply aspect-square w-full object-cover transition-all duration-500 hover:scale-105;
+  }
+  
+  .button-hover {
+    @apply transition-all duration-300 hover:bg-opacity-90 active:scale-95;
+  }
+  
+  .page-container {
+    @apply container mx-auto px-4 py-8 sm:px-6 lg:px-8;
+  }
+  
+  .section-title {
+    @apply font-serif text-3xl font-bold text-foreground sm:text-4xl;
+  }
+  
+  .section-subtitle {
+    @apply mt-2 text-lg text-muted-foreground;
+  }
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
